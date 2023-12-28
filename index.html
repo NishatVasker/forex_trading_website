@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forex Trading</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .tradingview-widget-container {
+            height: 100%;
+            width: 100%;
+        }
+
+        #tradingview_6bd45 {
+            height: 100%;
+            width: 100%;
+
+        }
+
+
+        header {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 5px 0;
+    text-align: center;
+}
+
+#header-logo {
+    width: 25px; /* Adjust as needed */
+    height: 25px; /* Adjust as needed */
+    margin-left: 20px; /* Space from the left edge */
+}
+
+
+nav a {
+            color: white;
+            padding: 5px;
+            text-decoration: none;
+            font-size: 10px;
+        }
+
+        nav a:hover {
+            background-color: #dddddd;
+            color: black;
+        }
+    </style>
+
+
+    
+
+
+</head>
+<body>
+<header>
+        <img src="https://github.com/NishatVasker/forex_trading/blob/main/image-removebg-preview.png?raw=true" alt="Logo" id="header-logo" >
+        <nav>
+            <a href="home.php">Home</a>
+            <a href="markets.html">Markets</a>
+            <a href="market_news.html">Education</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <!-- TradingView Widget BEGIN -->
+    <div class="tradingview-widget-container">
+        <div id="tradingview_6bd45"></div>
+    </div>
+    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+    <script type="text/javascript">
+        new TradingView.widget(
+        {
+            "autosize": true,
+            "symbol": "FX:EURUSD",
+            "timezone": "Etc/UTC",
+            "theme": "light",
+            "style": "1",
+            "locale": "en",
+            "enable_publishing": false,
+            "withdateranges": true,
+            "range": "YTD",
+            "hide_side_toolbar": false,
+            "allow_symbol_change": true,
+            "details": true,
+            "hotlist": true,
+            "calendar": true,
+            "show_popup_button": true,
+            "popup_width": "1000",
+            "popup_height": "650",
+            "container_id": "tradingview_6bd45"
+        }
+        );
+    </script>
+    <!-- TradingView Widget END -->
+    
+
+</body>
+</html>

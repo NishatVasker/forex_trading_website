@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TradingView Widget</title>
+    <style>
+        body {
+            background-color: black; /* Set the background color to black */
+            color: white; /* Optional: changes the default text color to white for better contrast */
+            margin: 0; /* Optional: removes the default margin of the body */
+        }
+        .widget-row {
+            display: flex;
+            flex-wrap: wrap; /* Allows widgets to wrap to the next line on smaller screens */
+        }
+
+        
+
+
+        .tradingview-widget-container {
+            flex: 1; /* Adjust the flex value as per your layout requirements */
+            min-width: 300px; /* Minimum width for each widget container */
+        }
+    </style>
+</head>
+<body>
+
+ <!-- Widgets container -->
+ <div class="widget-row">
+    <!-- First TradingView Widget -->
+    <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-profile.js" async>
+            {
+            "width": 480,
+            "height": 400,
+            "colorTheme": "dark",
+            "isTransparent": false,
+            "symbol": "FX:EURUSD",
+            "locale": "en"
+          }
+            </script>
+    </div>
+
+    <!-- Second TradingView Widget -->
+    <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-profile.js" async>
+            {
+            "width": 480,
+            "height": 400,
+            "colorTheme": "dark",
+            "isTransparent": false,
+            "symbol": "FX:GBPUSD",
+            "locale": "en"
+          }
+            </script>
+    </div>
+
+
+
+    <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-profile.js" async>
+            {
+            "width": 480,
+            "height": 400,
+            "colorTheme": "dark",
+            "isTransparent": false,
+            "symbol": "FX:USDJPY",
+            "locale": "en"
+          }
+            </script>
+    </div>
+
+
+
+
+
+    <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-profile.js" async>
+            {
+            "width": 480,
+            "height": 400,
+            "colorTheme": "dark",
+            "isTransparent": false,
+            "symbol": "FX:GBPJPY",
+            "locale": "en"
+          }
+            </script>
+    </div>
+
+
+
+    <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-profile.js" async>
+            {
+            "width": 480,
+            "height": 400,
+            "colorTheme": "dark",
+            "isTransparent": false,
+            "symbol": "FX:AUDUSD",
+            "locale": "en"
+          }
+            </script>
+    </div>
+
+ </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Widgets container -->
+    <div class="widget-row">
+        <!-- First TradingView Widget -->
+        <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-timeline.js">
+                {
+                    "feedMode": "all_symbols",
+                    "colorTheme": "dark",
+                    "isTransparent": true,
+                    "displayMode": "regular",
+                    "width": "900",
+                    "height": "830",
+                    "locale": "en"
+                }
+            </script>
+        </div>
+
+        <!-- Second TradingView Widget -->
+        <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-stock-heatmap.js" async>
+                {
+                "exchanges": [],
+                "dataSource": "SPX500",
+                "grouping": "sector",
+                "blockSize": "market_cap_basic",
+                "blockColor": "change",
+                "locale": "en",
+                "symbolUrl": "",
+                "colorTheme": "dark",
+                "hasTopBar": false,
+                "isDataSetEnabled": false,
+                "isZoomEnabled": true,
+                "hasSymbolTooltip": true,
+                "width": 800,
+                "height": 500
+              }
+                </script>
+        </div>
+    </div>
+
+</body>
+</html>
